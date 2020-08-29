@@ -1,17 +1,50 @@
+/*****************/
 /* Styling */
+/*****************/
 
+/* Background */
 .background {
   viewport-fill: black;
 }
 
+/* output elements length */
 .output {
   text-length: 32;
+}
+
+/* Font Size, Family & Color */
+.red {
+  fill: red;
+}
+
+.battery-container{
+  fill: white;
+  font-size : 18;
+  font-family: Colfax-Regular;
+}
+
+.date-container{
+  font-family: Colfax-Regular;
+  font-size: 30;
+  fill: white;
+}
+
+.heartrate-container{
+  font-size: 20;
+  font-family: Seville-Bold-Condensed;
+  fill: white;
+}
+
+.clock-container{
+  font-size: 35;
+  font-family: Colfax-Regular;
+  fill: white;
 }
 
 .metric-container {
   fill: white;
 }
-
+/* also set metrics horizontal positioning */
 .metricTitle{
   font-size: 16;
   font-family: Seville-Condensed;
@@ -24,112 +57,63 @@
   x: 75%;
 }
 
-.date-container{
-  font-family: Colfax-Regular;
-  font-size: 30;
-  fill: white;
-}
-
-.battery-container{
-  fill: white;
-  font-size : 18;
-  font-family: Colfax-Regular;
-}
-
-.heartrate-container{
-  font-size: 20;
-  font-family: Seville-Bold-Condensed;
-  fill: white;
-}
-
-.clock-container{
-  font-size: 35;
-  font-family: Colfax-Bold;
-  fill: white;
-  text-length: 32;
-}
-
-.red {
-  fill: red;
-}
-
+/*****************/
 /* Positioning */
-#clockText {
-  x: 52%;
-  y: 90%;
-}
+/*****************/
 
+/* Battery */
 #batteryText {
   y: 10%;
   x: 82%;
 }
-
 #batteryStatusText {
   y: 10%;
   x: 68%;
 }
 
-#stepsText{
+/* Metrics vertical */
+.metricLine1{
   y: 25%;
 }
-
-#stepsUnitText {
-  y:25%;
-}
-
-#distanceText {
+.metricLine2{
   y: 35%;
 }
-
-#distanceUnitText{
-  y: 35%;
-}
-
-#activeMinutesText {
+.metricLine3{
   y: 45%;
 }
-
-#activeMinutesUnitText {
-  y: 45%;
-}
-
-#caloriesText {
+.metricLine4{
   y: 55%;
 }
-
-#caloriesUnitText {
-  y: 55%;
-}
-
-#elevationGainText {
+.metricLine5{
   y: 65%;
 }
 
-#elevationGainUnitText {
-  y: 65%;
-}
-
+/* Date */
 #weekDayText{
   y: 20%;
   x: 7%;
 }
-
 #monthText{
   y: 30%;
   x: 7%;
 }
-
 #dateText{
   y: 40%;
   x: 7%;
 }
 
+/* Heart Rate */
 #heartRateText {
   y: 53%;
   x: 14%;
 }
-
 #heartRateSymbol {
   y: 53%;
   x: 7%;
+}
+
+/* Clock */
+#clockText {
+  x: 52%;
+  y: 90%;
 }

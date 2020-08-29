@@ -18,34 +18,36 @@
     <text id="heartRateSymbol" class="red ouput"/>
     <text id="heartRateText" class="output"/>
   </g>
+
+  <!-- User Activity Section -->
   <!-- steps -->
   <g class="metric-container">
-    <text id = "stepsUnitText" class ="metricTitle output"/>
-    <text id="stepsText" class="metricValue output"/>
+    <text id = "stepsUnitText" class ="metricLine1 metricTitle output"/>
+    <text id="stepsText" class="metricLine1 metricValue output"/>
   </g>
 
   <!-- calories -->
   <g class="metric-container">
-    <text id = "caloriesUnitText" class ="metricTitle output"/>
-    <text id="caloriesText"  class="metricValue output"/>
+    <text id = "caloriesUnitText" class ="metricLine2 metricTitle output"/>
+    <text id="caloriesText"  class="metricLine2 metricValue output"/>
   </g>
 
   <!-- distance -->
   <g class="metric-container">
-    <text id = "distanceUnitText"class ="metricTitle output"/>
-    <text id="distanceText" class="metricValue output"/>
+    <text id = "distanceUnitText"class ="metricLine3 metricTitle output"/>
+    <text id="distanceText" class="metricLine3 metricValue output"/>
   </g>
 
   <!-- activeMinutes -->
   <g class="metric-container">
-    <text id = "activeMinutesUnitText" class ="metricTitle output"/>
-    <text id="activeMinutesText"  class="metricValue output"/>
+    <text id = "activeMinutesUnitText" class ="metricLine4 metricTitle output"/>
+    <text id="activeMinutesText"  class="metricLine4 metricValue output"/>
   </g>
 
   <!-- elevationGain -->
   <g class="metric-container">
-     <text id = "elevationGainUnitText" class ="metricTitle output"/>
-    <text id="elevationGainText"  class="metricValue output"/>
+     <text id = "elevationGainUnitText" class ="metricLine5 metricTitle output"/>
+    <text id="elevationGainText"  class="metricLine5 metricValue output"/>
   </g>
   
    <!-- date -->
