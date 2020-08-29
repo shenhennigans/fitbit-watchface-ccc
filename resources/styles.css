@@ -1,0 +1,135 @@
+/* Styling */
+
+.background {
+  viewport-fill: black;
+}
+
+.output {
+  text-length: 32;
+}
+
+.metric-container {
+  fill: white;
+}
+
+.metricTitle{
+  font-size: 16;
+  font-family: Seville-Condensed;
+  x: 55%;
+}
+
+.metricValue{
+  font-size: 20;
+  font-family: Seville-Bold-Condensed;
+  x: 75%;
+}
+
+.date-container{
+  font-family: Colfax-Regular;
+  font-size: 30;
+  fill: white;
+}
+
+.battery-container{
+  fill: white;
+  font-size : 18;
+  font-family: Colfax-Regular;
+}
+
+.heartrate-container{
+  font-size: 20;
+  font-family: Seville-Bold-Condensed;
+  fill: white;
+}
+
+.clock-container{
+  font-size: 35;
+  font-family: Colfax-Bold;
+  fill: white;
+  text-length: 32;
+}
+
+.red {
+  fill: red;
+}
+
+/* Positioning */
+#clockText {
+  x: 52%;
+  y: 90%;
+}
+
+#batteryText {
+  y: 10%;
+  x: 82%;
+}
+
+#batteryStatusText {
+  y: 10%;
+  x: 68%;
+}
+
+#stepsText{
+  y: 25%;
+}
+
+#stepsUnitText {
+  y:25%;
+}
+
+#distanceText {
+  y: 35%;
+}
+
+#distanceUnitText{
+  y: 35%;
+}
+
+#activeMinutesText {
+  y: 45%;
+}
+
+#activeMinutesUnitText {
+  y: 45%;
+}
+
+#caloriesText {
+  y: 55%;
+}
+
+#caloriesUnitText {
+  y: 55%;
+}
+
+#elevationGainText {
+  y: 65%;
+}
+
+#elevationGainUnitText {
+  y: 65%;
+}
+
+#weekDayText{
+  y: 20%;
+  x: 7%;
+}
+
+#monthText{
+  y: 30%;
+  x: 7%;
+}
+
+#dateText{
+  y: 40%;
+  x: 7%;
+}
+
+#heartRateText {
+  y: 53%;
+  x: 14%;
+}
+
+#heartRateSymbol {
+  y: 53%;
+  x: 7%;
+}
