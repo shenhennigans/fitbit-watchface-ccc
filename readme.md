@@ -8,3 +8,4 @@
     <li>battery</li>
     <li>user activity: steps, distance, calories, minutes, elevation gain</li>
 </ul>
+<img src="resources/icons/icon.png">
