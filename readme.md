@@ -6,6 +6,6 @@
     <li>clock & date</li>
     <li>heart rate</li>
     <li>battery</li>
-    <li>user activity: steps, distance, calories, minutes, elevation gain</li>
+    <li>user activity: steps, distance, calories, zone minutes, elevation gain</li>
 </ul>
-<img src="resources/icons/icon.png">
+<img src="resources/icons/icon1.png">
