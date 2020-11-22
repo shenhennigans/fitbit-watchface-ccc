@@ -38,11 +38,17 @@
     <text id="distanceText" class="metricLine3 metricValue output"/>
   </g>
 
-  <!-- activeMinutes -->
+  <!-- activeMinutes
   <g class="metric-container">
     <text id = "activeMinutesUnitText" class ="metricLine4 metricTitle output"/>
     <text id="activeMinutesText"  class="metricLine4 metricValue output"/>
-  </g>
+  </g> -->
+  
+ <!--zoneMinutes-->
+ <g class="metric-container">
+    <text id = "activeZoneMinutesUnitText" class ="metricLine4 metricTitle output"/>
+    <text id="activeZoneMinutesText"  class="metricLine4 metricValue output"/>
+</g>
 
   <!-- elevationGain -->
   <g class="metric-container">

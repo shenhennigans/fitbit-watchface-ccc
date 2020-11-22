@@ -14,21 +14,23 @@ clock.granularity = "seconds";
 const stepGoal = userActivity.goals.steps;
 const distanceGoal = userActivity.goals.distance;
 const caloriesGoal = userActivity.goals.calories;
-const activeMinutesGoal = userActivity.goals.activeMinutes;
+//const activeMinutesGoal = userActivity.goals.activeMinutes;
+const activeZoneMinutesGoal = userActivity.goals.activeZoneMinutes.total;
 const elevationGainGoal = userActivity.goals.elevationGain;
 
 // set activity goal booleans
 let stepGoalReached;
 let distanceGoalReached;
 let caloriesGoalReached;
-let activeMinutesGoalReached;
+//let activeMinutesGoalReached;
+let activeZoneMinutesGoalReached;
 let elevationGainGoalReached;
 
 // metric titles
 const heartRateTitle = "<3";
 const stepsTitle = "steps";
 const distanceTitle = "km";
-const activeMinutesTitle = "minutes";
+const activeMinutesTitle = "zone mins";
 const caloriesTitle = "calories";
 const elevationGainTitle = 'floors';
 const completedIndicator = ' x';
@@ -46,8 +48,10 @@ const distanceElement = document.getElementById("distanceText");
 const distanceUnitElement = document.getElementById("distanceUnitText");
 const caloriesElement = document.getElementById("caloriesText");
 const caloriesUnitElement = document.getElementById("caloriesUnitText");
-const activeMinutesElement = document.getElementById("activeMinutesText");
-const activeMinutesUnitElement = document.getElementById("activeMinutesUnitText");
+//const activeMinutesElement = document.getElementById("activeMinutesText");
+//const activeMinutesUnitElement = document.getElementById("activeMinutesUnitText");
+const activeZoneMinutesElement = document.getElementById("activeZoneMinutesText");
+const activeZoneMinutesUnitElement = document.getElementById("activeZoneMinutesUnitText");
 const elevationGainElement = document.getElementById("elevationGainText");
 const elevationGainUnitElement = document.getElementById("elevationGainUnitText");
 const monthElement = document.getElementById("monthText");
@@ -58,7 +62,8 @@ const dateElement = document.getElementById("dateText");
 stepsUnitElement.text = stepsTitle;
 distanceUnitElement.text = distanceTitle;
 caloriesUnitElement.text = caloriesTitle;
-activeMinutesUnitElement.text = activeMinutesTitle;
+//activeMinutesUnitElement.text = activeMinutesTitle;
+activeZoneMinutesUnitElement.text = activeMinutesTitle;
 elevationGainUnitElement.text = elevationGainTitle;
 heartRateSymbol.text = heartRateTitle;
 
@@ -119,7 +124,8 @@ clock.ontick = (evt) => {
   stepGoalReached = userActivity.today.adjusted.steps >= stepGoal;
   distanceGoalReached = userActivity.today.adjusted.distance >= distanceGoal;
   caloriesGoalReached = userActivity.today.adjusted.calories >= caloriesGoal;
-  activeMinutesGoalReached= userActivity.today.adjusted.activeMinutes >= activeMinutesGoal;
+  //activeMinutesGoalReached= userActivity.today.adjusted.activeMinutes >= activeMinutesGoal;
+  activeZoneMinutesGoalReached = userActivity.today.adjusted.activeZoneMinutes.total >= activeZoneMinutesGoal;
   elevationGainGoalReached = userActivity.today.adjusted.elevationGain >= elevationGainGoal;
   
   
@@ -142,9 +148,15 @@ clock.ontick = (evt) => {
   }
   
   // Active Minutes
-  activeMinutesElement.text = userActivity.today.adjusted.activeMinutes;
-  if(activeMinutesGoalReached){
-    activeMinutesElement.text += completedIndicator;
+  //activeMinutesElement.text = userActivity.today.adjusted.activeMinutes;
+  //if(activeMinutesGoalReached){
+  //  activeMinutesElement.text += completedIndicator;
+  //}
+  
+  //Active Zone Minutes
+  activeZoneMinutesElement.text = userActivity.today.adjusted.activeZoneMinutes.total;
+  if(activeZoneMinutesGoalReached){
+    activeZoneMinutesElement.text += completedIndicator;
   }
   
   // Elevation Gain
@@ -158,12 +170,12 @@ clock.ontick = (evt) => {
 }
 
 function getMonthName(num){
-  let monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  let monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   return monthNames[num];
 }
 
 function getWeekDay(num){
-  let dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  let dayNames = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
   return dayNames[num];
 }
 
